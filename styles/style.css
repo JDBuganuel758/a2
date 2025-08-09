@@ -25,14 +25,14 @@ body {
 }
 .header-menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 .header-menu-link{
-    font-size: 18px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona);
     color: var(--color-terciario);
-    margin: 0 10px;
-    padding: 10px 15px;
+    margin: 0 1.125rem;
+    padding: 1.125rem 0.9375rem;
     text-decoration: none;
 }
 .header-menu-link:hover{
@@ -44,15 +44,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:82px;
 }
 .presentacion-contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .presentacion-contenido-titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 .titulo-destaque{
@@ -62,7 +63,7 @@ body {
     color: var(--color-cuarto);
 }
 .presentacion-contenido-parrafo1{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--fuente-montserrat);
 }
 .presentacion-contenido-parrafo1 a{
@@ -74,35 +75,35 @@ body {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 .presentacion-enlaces-subtitulo{
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 
 }
 .presentacion-enlaces-link{
-    width: 378px;
-    border:2px solid var(--color-terciario);
+    width: 50%;
+    border:0.125rem solid var(--color-terciario);
     text-align: center;
-    padding: 25px 0;
-    font-size: 24px;
-    border-radius: 8px;
+    padding: 1.5625rem 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
     font-family: var(--fuente-montserrat);
     font-weight: 600;
     text-decoration: none;
     color: var(--color-secundario);
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 .presentacion-enlaces-link:hover{
     background-color: var(--color-primario);
     padding: 5%;
 }
 .Foto{
-    width: 400px;
+    width: 50%;
 }
 .Foto:hover{
     transform: scale(1.1);
@@ -110,10 +111,25 @@ body {
 .footer{
     background-color: var(--color-terciario);
     color: var(--color-primario);
-    padding: 24px;
+    padding: 1.5rem;
     text-align: center;
     font-family: var(--fuente-montserrat);
-    font-size:24px;
+    font-size:1.5rem;
     font-weight: 400;
 }
 
+@media(max-width: 1200px){
+    .header{
+        padding:10%;
+    }
+    .header-menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion-contenido{
+        width: auto;
+    }
+}
